@@ -5,7 +5,7 @@ const logic = require("../logic/routes");
 const checking =require("../middleware/checking")
 router.post("/", logic.post);
 
-router.get("/all",checking, logic.getAll);
+router.get("/all",logic.getAll);
 
 router.delete("/:id",logic.delete);
 
